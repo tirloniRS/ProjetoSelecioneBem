@@ -1,5 +1,7 @@
 /node_modules
 .env
+.envAntiga
+data-sourceAntiga.ts
 src/migrations
 .DS_Store
 Tarefas.txt
