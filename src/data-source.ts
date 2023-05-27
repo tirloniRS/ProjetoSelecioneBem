@@ -5,13 +5,13 @@ import { DataSource } from "typeorm"
 const port = process.env.DB_PORT as number | undefined
 
 export const AppDataSource = new DataSource({
+
     type: 'postgres',
 
-    // conexão nuvem
+    // CÓDIGO PARA CONEXÃO NA NUVEM - COMENTAR CONEXÃO LOCAL
     url: process.env.DB_URI,
 
-
-    // conexão local    
+    // CÓDIGO PARA CONEXÃO LOCAL, COMENTAR CONEXÃO NUVEM
     // host: process.env.DB_HOST,
     // port: port,
     // username: process.env.DB_USER,
