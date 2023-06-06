@@ -7,6 +7,10 @@ AppDataSource.initialize().then(() => {
     const app = express()
 
     app.use(cors())
+
+    // app.use(cors({
+    //     origin: ['dominio.com.br', 'dominio.com']
+    // }))
     app.use(express.json())
 
     app.use(routes)
